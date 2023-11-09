@@ -30,3 +30,20 @@ let e: Set<unknown> = new Set([1, "v", false, "v"]);
 e.add("cat");
 e.delete(false);
 console.log(e);
+
+// Type Aliases
+type Animal = {
+  name: string;
+};
+type Bear = Animal & {
+  honey: boolean;
+};
+
+// Interface
+interface Animal2 {
+  name: string;
+}
+
+interface Bear2 extends Animal2 {
+  honey: boolean;
+}

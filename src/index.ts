@@ -74,11 +74,12 @@ const bar2: (v: string) => never = (v) => {
 };
 
 // How do work DOM in Typescript?
-const el = document.querySelector(".foo") as HTMLInputElement | null;
-el?.addEventListener("blur", (event) => {
-  const target = event.target as HTMLInputElement;
-  console.log(target.value);
-});
+
+// const el = document.querySelector(".foo") as HTMLInputElement | null;
+// el?.addEventListener("blur", (event) => {
+//   const target = event.target as HTMLInputElement;
+//   console.log(target.value);
+// });
 
 // what is enum in typescript?
 enum stat {
@@ -125,3 +126,16 @@ const user2: Readonly<Staff> = {
   id: 1,
   name: "Sara",
 };
+
+// What is partial in Typescript
+
+const updateUser = (user: User1, fieldes: Partial<User1>) => {
+  return { ...user, ...fieldes };
+};
+const u1: User1 = {
+  id: 1,
+  name: "Sara",
+  age: 30,
+};
+const updatedUser = updateUser(u1, { age: 25 });
+console.log(updatedUser);

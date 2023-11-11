@@ -87,3 +87,15 @@ enum stat {
   c,
 }
 const t1: { id: number; status: stat } = { id: 1, status: stat.a };
+
+// How to work with generics in Typescript?
+interface User<T> {
+  name: string;
+  data: T;
+}
+const user: User<{ meta: string }> = {
+  name: "test",
+  data: {
+    meta: "meta 1",
+  },
+};

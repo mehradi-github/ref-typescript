@@ -79,3 +79,11 @@ el?.addEventListener("blur", (event) => {
   const target = event.target as HTMLInputElement;
   console.log(target.value);
 });
+
+// what is enum in typescript?
+enum stat {
+  a,
+  b,
+  c,
+}
+const t1: { id: number; status: stat } = { id: 1, status: stat.a };

@@ -34,4 +34,8 @@
     - Literal Types in TypeScript allow you to specify exact values for variables or properties. Unlike regular types that can represent a range of possible values, literal types restrict the value to a specific literal value, providing precise and self-documenting code.
 
 13. What is d.ts file in Typescript
+
     - .d.ts files are called type declaration files. They exist for one purpose only: to describe the shape of an existing module and they only contain type information used for type checking.
+
+14. What is map file in Typescript
+    - TypeScript Map files are source map files that let tools map between the emitted JavaScript code and the TypeScript source files that created it. And these Source Map files will then help to debug the Typescript file instead of debugging the emitted JavaScript file.

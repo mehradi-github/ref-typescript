@@ -118,4 +118,10 @@ interface User1 {
   age: number;
 }
 type Profile = Omit<User1, "age" | "name">;
-type Staff = Pick<User1, "age" | "id">;
+type Staff = Pick<User1, "id" | "name">;
+
+// Readonly
+const user2: Readonly<Staff> = {
+  id: 1,
+  name: "Sara",
+};

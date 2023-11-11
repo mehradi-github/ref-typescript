@@ -159,4 +159,7 @@ type Easing = "ease-in" | "ease-out" | "ease-in-out";
 type CustomNonNullable<T> = T extends null | undefined ? never : T;
 
 // What is infer in Typescript
-type CustomReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
+type CustomReturnType<T> = T extends (first: infer F, ...args: any[]) => any
+  ? F
+  : any;
+type a = CustomReturnType<(first: string, age: number) => void>;

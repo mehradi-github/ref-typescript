@@ -109,3 +109,13 @@ const salary: Record<string, number> = {
   annual: 70000,
   bonus: 1000,
 };
+
+// What is omit and pick in Typescript
+
+interface User1 {
+  id: number;
+  name: string;
+  age: number;
+}
+type Profile = Omit<User1, "age" | "name">;
+type Staff = Pick<User1, "age" | "id">;

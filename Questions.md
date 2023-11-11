@@ -26,5 +26,12 @@
     - TypeScript 3.0 introduces a new top type unknown . unknown is the type-safe counterpart of any . Anything is assignable to unknown , but unknown isn't assignable to anything but itself and any without a type assertion or a control flow based narrowing.
 
 11. What is a record type in Typescript
+
     - the Record type simply allows us to define dictionaries, also referred to as key-value pairs, with a fixed type for the keys and a fixed type for the values.
-12.
+
+12. What is literal type in Typescript
+
+    - Literal Types in TypeScript allow you to specify exact values for variables or properties. Unlike regular types that can represent a range of possible values, literal types restrict the value to a specific literal value, providing precise and self-documenting code.
+
+13. What is d.ts file in Typescript
+    - .d.ts files are called type declaration files. They exist for one purpose only: to describe the shape of an existing module and they only contain type information used for type checking.

@@ -151,3 +151,6 @@ const u2: Required<User2> = {
   name: "Sara",
   age: 20,
 };
+
+// What is literal type in Typescript
+type Easing = "ease-in" | "ease-out" | "ease-in-out";

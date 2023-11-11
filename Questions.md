@@ -15,4 +15,5 @@
     - A union type describes a value that can be one of several types. We use the vertical bar ( | ) to separate each type, so number | string | boolean is the type of a value that can be a number , a string , or a boolean .
 7.  What is a narrowed type?
     - the process of knowing the type of a variable is known as type narrowing, which is a way to assert the type to act based on the result. By doing this process, you can get a more specific type, allowing you to perform the correct action, and make your code more expressive and less error prone.
-8.
+8.  What is void in typescript?
+    - void: represents the return value of functions which don't return a value.

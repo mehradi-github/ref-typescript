@@ -63,3 +63,7 @@ const foo = (value: string | Date) => {
   if (value instanceof Date) return value.toUTCString();
   return value;
 };
+// void
+const bar: (v: string) => void = (v) => {
+  console.log(v);
+};

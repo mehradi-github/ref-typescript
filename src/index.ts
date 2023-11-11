@@ -154,3 +154,6 @@ const u2: Required<User2> = {
 
 // What is literal type in Typescript
 type Easing = "ease-in" | "ease-out" | "ease-in-out";
+
+// What is extends in Typescript
+type CustomNonNullable<T> = T extends null | undefined ? never : T;

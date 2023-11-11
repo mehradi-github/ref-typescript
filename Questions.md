@@ -38,4 +38,8 @@
     - .d.ts files are called type declaration files. They exist for one purpose only: to describe the shape of an existing module and they only contain type information used for type checking.
 
 14. What is map file in Typescript
+
     - TypeScript Map files are source map files that let tools map between the emitted JavaScript code and the TypeScript source files that created it. And these Source Map files will then help to debug the Typescript file instead of debugging the emitted JavaScript file.
+
+15. What is function overloading in Typescript
+    - Function overloading allows us to define multiple function signatures for a single function name, enabling the same function to exhibit different behaviors based on the number or types of arguments passed to it. This feature can be extremely useful for writing more expressive and efficient code.

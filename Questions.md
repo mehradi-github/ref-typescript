@@ -17,3 +17,12 @@
     - the process of knowing the type of a variable is known as type narrowing, which is a way to assert the type to act based on the result. By doing this process, you can get a more specific type, allowing you to perform the correct action, and make your code more expressive and less error prone.
 8.  What is void in typescript?
     - void: represents the return value of functions which don't return a value.
+9.  What is never type in typescript?
+
+    - TypeScript introduced a new type never , which indicates the values that will never occur. The never type is used when you are sure that something is never going to occur. For example, you write a function which will not return to its end point or always throws an exception.
+
+10. What is unknown type in typescript?
+
+    - TypeScript 3.0 introduces a new top type unknown . unknown is the type-safe counterpart of any . Anything is assignable to unknown , but unknown isn't assignable to anything but itself and any without a type assertion or a control flow based narrowing.
+
+11.

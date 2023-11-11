@@ -67,3 +67,15 @@ const foo = (value: string | Date) => {
 const bar: (v: string) => void = (v) => {
   console.log(v);
 };
+
+// never
+const bar2: (v: string) => never = (v) => {
+  throw new Error("Fail");
+};
+
+// How do work DOM in Typescript?
+const el = document.querySelector(".foo") as HTMLInputElement | null;
+el?.addEventListener("blur", (event) => {
+  const target = event.target as HTMLInputElement;
+  console.log(target.value);
+});

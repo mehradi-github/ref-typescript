@@ -163,3 +163,6 @@ type CustomReturnType<T> = T extends (first: infer F, ...args: any[]) => any
   ? F
   : any;
 type a = CustomReturnType<(first: string, age: number) => void>;
+// example 2
+type ArayType<T> = T extends (infer item)[] ? item : T;
+type a2 = ArayType<[string, number]>;

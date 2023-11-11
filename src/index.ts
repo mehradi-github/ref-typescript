@@ -139,3 +139,15 @@ const u1: User1 = {
 };
 const updatedUser = updateUser(u1, { age: 25 });
 console.log(updatedUser);
+
+// What is required in Typescript
+interface User2 {
+  id?: number;
+  name?: string;
+  age?: number;
+}
+const u2: Required<User2> = {
+  id: 1,
+  name: "Sara",
+  age: 20,
+};

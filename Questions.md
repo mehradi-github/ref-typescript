@@ -25,4 +25,6 @@
 
     - TypeScript 3.0 introduces a new top type unknown . unknown is the type-safe counterpart of any . Anything is assignable to unknown , but unknown isn't assignable to anything but itself and any without a type assertion or a control flow based narrowing.
 
-11.
+11. What is a record type in Typescript
+    - the Record type simply allows us to define dictionaries, also referred to as key-value pairs, with a fixed type for the keys and a fixed type for the values.
+12.

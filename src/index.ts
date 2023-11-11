@@ -99,3 +99,13 @@ const user: User<{ meta: string }> = {
     meta: "meta 1",
   },
 };
+
+//array vs tuple
+const a1: string[] = ["1", "2", "3"];
+const a2: [string, number] = ["one", 1];
+
+//Record Type
+const salary: Record<string, number> = {
+  annual: 70000,
+  bonus: 1000,
+};

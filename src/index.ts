@@ -48,6 +48,7 @@ interface Bear2 extends Animal2 {
   honey: boolean;
 }
 
+// Function
 const getFullname: (name: string, familly: string) => string = (
   name,
   familly

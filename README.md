@@ -14,5 +14,5 @@ pnpm add -D typescript nodemon ts-node
 pnpm tsc --init
 
 # OR
-pnpm create vite@latest ref-typescript
+pnpm create vite@latest .
 ```
